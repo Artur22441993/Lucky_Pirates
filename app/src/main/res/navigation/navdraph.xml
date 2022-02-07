@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navdraph"
+    app:startDestination="@id/fragmentStart">
+
+    <fragment
+        android:id="@+id/fragmentStart"
+        android:name="com.lluuckky.ppiiratess.sewqu.FragmentStart"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentButt"
+            app:destination="@id/fragmentButt" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentButt"
+        android:name="com.lluuckky.ppiiratess.sewqu.FragmentButt"
+        android:label="fragment_butt"
+        tools:layout="@layout/fragment_butt" >
+        <action
+            android:id="@+id/action_fragmentButt_to_fragmentPol2"
+            app:destination="@id/fragmentPol" />
+        <action
+            android:id="@+id/action_fragmentButt_to_fragmentGame"
+            app:destination="@id/fragmentGame" />
+        <action
+            android:id="@+id/action_fragmentButt_to_fragmentOf"
+            app:destination="@id/fragmentOf" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPol"
+        android:name="com.lluuckky.ppiiratess.sewqu.FragmentPol"
+        android:label="fragment_pol"
+        tools:layout="@layout/fragment_pol" >
+        <action
+            android:id="@+id/action_fragmentPol2_to_fragmentButt"
+            app:destination="@id/fragmentButt" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGame"
+        android:name="com.lluuckky.ppiiratess.sewqu.FragmentGame"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_fragmentGame_to_fragmentButt"
+            app:destination="@id/fragmentButt" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOf"
+        android:name="com.lluuckky.ppiiratess.sewqu.FragmentOf"
+        android:label="fragment_of"
+        tools:layout="@layout/fragment_of" >
+        <action
+            android:id="@+id/action_fragmentOf_to_fragmentButt"
+            app:destination="@id/fragmentButt" />
+    </fragment>
+</navigation>
